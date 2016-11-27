@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
     selector: 'my-dashboard',
     moduleId: module.id,
     templateUrl: 'dashboard.component.html',
-    stylesUrls: ['dashboard.component.css']
+    styleUrls: ['dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
     heroes: Hero[] = [];
