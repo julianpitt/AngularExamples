@@ -9,22 +9,22 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
-var router_1 = require("@angular/router");
-var Page1 = (function () {
-    function Page1(router) {
-        this.router = router;
+var common_1 = require("@angular/common");
+var Page2 = (function () {
+    function Page2(location) {
+        this.location = location;
     }
-    Page1.prototype.navigate = function () {
-        this.router.navigate(["page2"]);
+    Page2.prototype.goBack = function () {
+        this.location.back();
     };
-    Page1 = __decorate([
+    Page2 = __decorate([
         core_1.Component({
-            selector: "page1",
-            templateUrl: "app/page1/page1.component.html"
+            selector: "page2",
+            templateUrl: "app/views/page2.component.html"
         }), 
-        __metadata('design:paramtypes', [router_1.Router])
-    ], Page1);
-    return Page1;
+        __metadata('design:paramtypes', [common_1.Location])
+    ], Page2);
+    return Page2;
 }());
-exports.Page1 = Page1;
-//# sourceMappingURL=page1.component.js.map
+exports.Page2 = Page2;
+//# sourceMappingURL=page2.component.js.map

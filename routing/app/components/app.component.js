@@ -8,23 +8,20 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require("@angular/core");
-var common_1 = require("@angular/common");
-var Page2 = (function () {
-    function Page2(location) {
-        this.location = location;
+var core_1 = require('@angular/core');
+var AppComponent = (function () {
+    function AppComponent() {
     }
-    Page2.prototype.goBack = function () {
-        this.location.back();
-    };
-    Page2 = __decorate([
+    AppComponent = __decorate([
         core_1.Component({
-            selector: "page2",
-            templateUrl: "app/page2.component.html"
+            moduleId: module.id,
+            selector: 'main-app',
+            templateUrl: "../views/app.component.html",
+            styleUrls: ["../styles/app.component.css"]
         }), 
-        __metadata('design:paramtypes', [common_1.Location])
-    ], Page2);
-    return Page2;
+        __metadata('design:paramtypes', [])
+    ], AppComponent);
+    return AppComponent;
 }());
-exports.Page2 = Page2;
-//# sourceMappingURL=page2.component.js.map
+exports.AppComponent = AppComponent;
+//# sourceMappingURL=app.component.js.map

@@ -3,7 +3,7 @@ import { Router } from "@angular/router";
 
 @Component({
     selector: "page1",
-    templateUrl: "app/page1/page1.component.html"
+    templateUrl: "app/views/page1.component.html"
 })
 
 export class Page1 {
